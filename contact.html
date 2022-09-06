@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontz/css/all.css">
+    <link rel="stylesheet" href="m.css">
+    <title>Contacts</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="opp">
+            <div class="dvi"><a href="index.html">HOME</a></div>
+            <div class="dvi"><a href="service.html">SERVICES</a></div>
+            <div class="dvi"><a href="about.html">ABOUT US</a></div>
+            <div class="dvi"><a href="contact.html">CONTACT US</a></div>
+        </div>
+
+
+        <div class="top flex-row">
+            <div class="logo "><i><a href="index.html">VINET</a></i></div>
+            <div class="list">
+                <ul class="list-items flex-row">
+                    <li class="list-item"><a href="index.html">HOME</a></li>
+                    <li class="list-item"><a href="service.html">SERVICES</a></li>
+                    <li class="list-item"><a href="about.html">ABOUT US</a></li>
+                    <li class="list-item"><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div id="toggle"><span id="open"><i class="fas fa-bars"></i></span> <span id="close"><i class="fas fa-x"></i></span></div>
+        </div>
+        <div class="sub-contain flex-row">
+            <div class="head">
+                <h1>Customer Care</h1>
+                <P>
+                    Customer care service is just as important as the product of any business. <br>
+                    that is why we have decided to provide our clients with the best of customer care service
+                </P>
+                <button>Learn More &rarr;</button>
+            </div>
+        </div>
+
+        <!-- ----------------------------------Guy------------------------------------- -->
+        <h1 style="text-align:center; margin-top: 2rem; margin-bottom: 2rem;">Contact Us on our various platforms</h1>
+
+ 
+        <div id="cdude" style="background-repeat: no-repeat; background-size: 100%; background-position: right;">
+            <div class="dac">
+            <div class="contact_us">
+                <div class="contact_data">
+                    <img src="media/icons/whatsapp.png" alt="">
+                    <p>
+                        08116385416
+                    </p>
+                </div>
+                <div class="contact_data">
+                    <img src="media/icons/twitter.png" alt="">
+                    <p>
+                        08116385416
+                    </p>
+                </div>
+                <div class="contact_data">
+                    <img src="media/icons/gmail.png" alt="">
+                    <p>
+                        08116385416
+                    </p>
+                </div>
+                <div class="contact_data">
+                    <img src="media/icons/facebook.png" alt="">
+                    <p>
+                        08116385416
+                    </p>
+                </div>
+            </div>
+         </div>
+       </div>
+        <!---------------------------------------------------------------Banner -------------------------------------------->
+
+
+        <div class="banner">
+            <div class="b-d">
+                <div class="b-d-1">
+                    <h1>Cyber-Security Threats</h1>
+                    <ul>
+                        <li class="b-d-li">Phishing</li>
+                        <li class="b-d-li">Ransomware</li>
+                        <li class="b-d-li">Denial of Service</li>
+                        <li class="b-d-li">SQL Injection</li>
+                        <li class="b-d-li">Spyware</li>
+                    </ul>
+                </div>
+                <div class="b-d-2">
+                    <img src="media/icons/hack.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+<!-- -------------------------------------------------------------------------------------footer ------------------------------------------->
+
+    <footer>
+        <div class="footer">
+            <div class="foot">
+                <h3>Intro</h3>
+            </div>
+            <div class="foot">
+                <h3>Our Services</h3>
+            </div>
+            <div class="foot">
+                <h3>Clients</h3>
+            </div>
+            <div class="foot">
+                <h3>Contacts</h3>
+                <ul>
+                    <li><span><img src="media/icons/gmail.png" alt=""></span> <span>vi-net@gmail.com</span></li>
+                    <li><span><img src="media/icons/whatsapp.png" alt=""></span> <span></span></li>
+                    <li><span><img src="media/icons/facebook.png" alt=""></span> <span></span></li>
+                    <li><span><img src="media/icons/twitter.png" alt=""></span> <span></span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copy">
+            <hr>
+            &copy; vinet 2022
+        </div>
+    </footer>
+     
+        
+    </div>
+    <script>
+        var toggle = document.getElementById('toggle');
+        var op = document.getElementById('open');
+        var cl = document.getElementById('close');
+        var wi = document.getElementById('opp');
+        var ht = document.querySelector('.container');
+
+
+        toggle.addEventListener('click',()=>{
+            if(op.style.display =="none")
+            {
+                cl.style.display = "none";
+                op.style.display = "block";
+                wi.style.width = 0;
+                ht.style.height = "auto";
+            }
+            else{
+                op.style.display = "none";
+                cl.style.display = "block";
+                wi.style.width = "100%";
+                ht.style.height = "100vh";
+            }
+        })
+    </script>
+</body>
+</html>

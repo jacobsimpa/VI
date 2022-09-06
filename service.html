@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontz/css/all.css">
+    <link rel="stylesheet" href="m.css">
+    <title>Services</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="opp">
+            <div class="dvi"><a href="index.html">HOME</a></div>
+            <div class="dvi"><a href="service.html">SERVICES</a></div>
+            <div class="dvi"><a href="about.html">ABOUT US</a></div>
+            <div class="dvi"><a href="contact.html">CONTACT US</a></div>
+        </div>
+
+
+        <div class="top flex-row">
+            <div class="logo "><i><a href="index.html">VINET</a></i></div>
+            <div class="list">
+                <ul class="list-items flex-row">
+                    <li class="list-item"><a href="index.html">HOME</a></li>
+                    <li class="list-item"><a href="service.html">SERVICES</a></li>
+                    <li class="list-item"><a href="about.html">ABOUT US</a></li>
+                    <li class="list-item"><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div id="toggle"><span id="open"><i class="fas fa-bars"></i></span> <span id="close"><i class="fas fa-x"></i></span></div>
+        </div>
+        <div class="sub-contain flex-row">
+            <div class="head">
+                <h1>Our Services</h1>
+                <P>
+                    Vinet provides a number of IT services to suit individual and institution's needs
+                </P>
+                <button><a href="about.html">Learn More &rarr;</a></button>
+            </div>
+        </div>
+
+        <!-- ----------------------------------Guy------------------------------------- -->
+        <div id="pdude">
+
+            <div class="products">
+                <div class="pdd">
+                    <img src="media/icons/bug-detector.png" alt="">
+                    <h3>System Security</h3>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="pdd">
+                    <img src="media/icons/man.png" alt="">
+                    <h3>IT for Business</h3>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="pdd">
+                    <img src="media/icons/debit-card.png" alt="">
+                    <h3>Online Payment System</h3>
+                </div>
+                <div class="pdd">
+                    <img src="media/icons/ne.png" alt="">
+                    <h3>System Networking</h3>
+                </div>
+                <div class="pdd">
+                    <img src="media/icons/microsoft.png" alt="">
+                    <h3>Windows, Apple & Software MGMT</h3>
+                </div>
+                <div class="pdd">
+                    <img src="media/icons/programming.png" alt="">
+                    <h3>Software Development</h3>
+                </div>
+            </div>
+        
+       </div>
+        <!---------------------------------------------------------------Banner -------------------------------------------->
+
+
+        <div class="banner">
+            <div class="b-d">
+                <div class="b-d-1">
+                    <h1>Benefits of IT</h1>
+                    <ul>
+                        <li class="b-d-li">Automation</li>
+                        <li class="b-d-li">Improved Storage</li>
+                        <li class="b-d-li">Increase Revenue Streams</li>
+                        <li class="b-d-li">Better Data Security</li>
+                        <li class="b-d-li">Great Customer Experience</li>
+                    </ul>
+                </div>
+                <div class="b-d-2">
+                    <img src="media/icons/pie-chart.png" alt="">
+                </div>
+            </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------footer ------------------------------------------->
+
+    <footer>
+        <div class="footer">
+            <div class="foot">
+                <h3>Intro</h3>
+            </div>
+            <div class="foot">
+                <h3>Our Services</h3>
+            </div>
+            <div class="foot">
+                <h3>Clients</h3>
+            </div>
+            <div class="foot">
+                <h3>Contacts</h3>
+                <ul>
+                    <li><span><img src="media/icons/gmail.png" alt=""></span> <span>vi-net@gmail.com</span></li>
+                    <li><span><img src="media/icons/whatsapp.png" alt=""></span> <span></span></li>
+                    <li><span><img src="media/icons/facebook.png" alt=""></span> <span></span></li>
+                    <li><span><img src="media/icons/twitter.png" alt=""></span> <span></span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copy">
+            <hr>
+            &copy; vinet 2022
+        </div>
+    </footer>
+     
+        
+    </div>
+
+
+    <script>
+        var toggle = document.getElementById('toggle');
+        var op = document.getElementById('open');
+        var cl = document.getElementById('close');
+        var wi = document.getElementById('opp');
+        var ht = document.querySelector('.container');
+
+
+        toggle.addEventListener('click',()=>{
+            if(op.style.display =="none")
+            {
+                cl.style.display = "none";
+                op.style.display = "block";
+                wi.style.width = 0;
+                ht.style.height = "auto";
+            }
+            else{
+                op.style.display = "none";
+                cl.style.display = "block";
+                wi.style.width = "100%";
+                ht.style.height = "100vh";
+            }
+        })
+    </script>
+</body>
+</html>

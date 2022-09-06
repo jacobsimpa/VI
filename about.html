@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontz/css/all.css">
+    <link rel="stylesheet" href="m.css">
+    <title>About Page</title>
+</head>
+<body>
+    <div class="container">
+        <div id="opp">
+            <div class="dvi"><a href="index.html">HOME</a></div>
+            <div class="dvi"><a href="service.html">SERVICES</a></div>
+            <div class="dvi"><a href="about.html">ABOUT US</a></div>
+            <div class="dvi"><a href="contact.html">CONTACT US</a></div>
+        </div>
+
+        <div class="top flex-row">
+            <div class="logo "><i><a href="index.html">VINET</a></i></div>
+            <div class="list">
+                <ul class="list-items flex-row">
+                    <li class="list-item"><a href="index.html">HOME</a></li>
+                    <li class="list-item"><a href="service.html">SERVICES</a></li>
+                    <li class="list-item"><a href="about.html">ABOUT US</a></li>
+                    <li class="list-item"><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div id="toggle"><span id="open"><i class="fas fa-bars"></i></span> <span id="close"><i class="fas fa-x"></i></span></div>
+        </div>
+        <div class="sub-contain flex-row">
+            <div class="head">
+                <h1>About US</h1>
+                <P>
+                    We are an IT company whose intention is to bring the best of IT
+                    to clients, making IT integration to our every day routine 
+                    as easy as can be.
+                </P>
+                <button><a href="service.html">Our Services &rarr;</a></button>
+            </div>
+        </div>
+
+        <!-- ----------------------------------Guy------------------------------------- -->
+        <div id="adude">
+            <div class="about_us">
+                <div class="about_1">
+                    <img src="media/icons/confusion.png" alt="" id="confused">
+                    <h1>Who are we ?</h1>
+                    <br>
+                    <h3>IT Solutions company</h3>
+                    <br>
+                    <p>
+                        Our goal is to grow businesses in africa, using tech.
+                        we provide various IT services.
+                    </p>
+                    <br>
+                        <ul class="kan">
+                            <li>Consulting</li>
+                            <li>Sourcing</li>
+                            <li>Procurement</li>
+                            <li>Development</li>
+                            <li>Configuration</li>
+                        </ul>
+                    <p>
+
+                    </p>
+                    <div id="abt_1">
+                        <h2>Websites we build</h2>
+                        <br>
+                        <ul class="kan">
+                            <li>E-commerce Websites</li>
+                            <li>Web API</li>
+                            <li>Academic Websites</li>
+                            <li>Business Websites</li>
+                            <li>Crypto Websites</li>
+                            <li>Payment Gateways</li>
+                            <li>Online Banking</li>
+                        </ul>
+                        <img src="media/icons/browser.png" alt="" id="abt_1_img">
+                    </div>
+                    <div id="abt_2">
+                        <div id="endi"><img src="media/icons/net.png" alt=""></div>
+                        <div id="devi">
+                            <h2>Networks</h2>
+                            <br>
+                            <p></p>
+                            <br>
+                            <ul class="kan">
+                                <li>Network Security</li>
+                                <li>Cyber Security</li>
+                                <li>Network Segmentation</li>
+                                <li>Network Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="about_2">
+                    <img src="media/icons/business.png" alt="">
+                    <h3>About Director</h3>
+                    <p>
+                        Jacob victor simpa is a fullstack web developer, IT consultant also has vast knowledge
+                        in networking and computer hardware.
+                        <br>
+                        A computer science graduate of ambrose ali university, spent his time developing himself in the IT sector.
+                    </p>
+                </div>
+            </div>
+       </div>
+        <!---------------------------------------------------------------Banner -------------------------------------------->
+
+
+        <div class="banner">
+            <div class="b-d">
+                <div class="b-d-1">
+                    <h1>Common OS</h1>
+                    <ul>
+                        <li class="b-d-li">Windows</li>
+                        <li class="b-d-li">Mac</li>
+                        <li class="b-d-li">Kali</li>
+                        <li class="b-d-li">Ubuntu</li>
+                        <li class="b-d-li">Fedora</li>
+                    </ul>
+                </div>
+                <div class="b-d-2">
+                    <img src="media/icons/apple.png" alt="">
+                </div>
+            </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------footer ------------------------------------------->
+
+    <footer>
+        <div class="footer">
+            <div class="foot">
+                <h3>Intro</h3>
+            </div>
+            <div class="foot">
+                <h3>Our Services</h3>
+            </div>
+            <div class="foot">
+                <h3>Clients</h3>
+            </div>
+            <div class="foot">
+                <h3>Contacts</h3>
+                <ul>
+                    <li><span><img src="media/icons/gmail.png" alt=""></span> <span>vi-net@gmail.com</span></li>
+                    <li><span><img src="media/icons/whatsapp.png" alt=""></span> <span></span></li>
+                    <li><span><img src="media/icons/facebook.png" alt=""></span> <span></span></li>
+                    <li><span><img src="media/icons/twitter.png" alt=""></span> <span></span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copy">
+            <hr>
+            &copy; vinet 2022
+        </div>
+    </footer>
+     
+        
+    </div>
+
+    <script>
+        var toggle = document.getElementById('toggle');
+        var op = document.getElementById('open');
+        var cl = document.getElementById('close');
+        var wi = document.getElementById('opp');
+        var ht = document.querySelector('.container');
+
+
+        toggle.addEventListener('click',()=>{
+            if(op.style.display =="none")
+            {
+                cl.style.display = "none";
+                op.style.display = "block";
+                wi.style.width = 0;
+                ht.style.height = "auto";
+            }
+            else{
+                op.style.display = "none";
+                cl.style.display = "block";
+                wi.style.width = "100%";
+                ht.style.height = "100vh";
+            }
+        })
+    </script>
+</body>
+</html>
