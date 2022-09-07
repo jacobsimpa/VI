@@ -522,4 +522,13 @@ footer{
     .b-d-li{
         width: 100%;
     }
+    #toggle{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom:5px;
+    }
+    .logo{
+        padding: 5px;
+    }
 }
