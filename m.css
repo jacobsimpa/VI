@@ -531,4 +531,7 @@ footer{
     .logo{
         padding: 5px;
     }
+    .top{
+        padding:10px;
+    }
 }
